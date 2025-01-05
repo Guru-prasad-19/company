@@ -75,7 +75,7 @@ const ParallaxEffect = () => {
                 },
               },
               color: {
-                value: "#ffffff", // Particle color
+                value: "#e8be50", // Particle color
               },
               shape: {
                 type: "circle", // Shape of particles
