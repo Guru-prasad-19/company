@@ -3,3 +3,6 @@ hr {
   border:1px solid linear-gradient(to left, #ffffff, rgb(0, 0, 0));
   /* color:  linear-gradient(to left, #FFFFFF, black);  */
 }
+* {
+  box-sizing: border-box;
+}

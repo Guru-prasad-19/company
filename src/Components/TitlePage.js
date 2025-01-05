@@ -4,40 +4,40 @@ import "../Styles/TitlePage.css";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
-const ContactCard = ({platform}) => {
+const ContactCard = ({ platform }) => {
   return (
     <div className="contact-container">
-        <a
-          href={platform[0].url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact-item"
-        >
-          <FaLinkedinIn className="icon"/>
-        </a>
-        <a
-          href= {`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-    platform[1].url
-  )}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact-item"
-        >
-          <SiGmail className="icon"/>
-        </a>
-        <a
-          href={platform[2].url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact-item"
-        >
-          <IoLogoInstagram className="icon"/>
-        </a>
+      <a
+        href={platform[0].url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-item"
+      >
+        <FaLinkedinIn className="icon" />
+      </a>
+      <a
+        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+          platform[1].url
+        )}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-item"
+      >
+        <SiGmail className="icon" />
+      </a>
+      <a
+        href={platform[2].url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-item"
+      >
+        <IoLogoInstagram className="icon" />
+      </a>
     </div>
   );
 };
 
-const AnimatedProgressBar = ({ progress, duration = 5000 }) => {
+const AnimatedProgressBar = ({ progress, duration = 3500 }) => {
   const [currentProgress, setCurrentProgress] = useState(0);
 
   useEffect(() => {
@@ -73,14 +73,28 @@ const AnimatedProgressBar = ({ progress, duration = 5000 }) => {
 function TitlePage() {
   const [progress, setProgress] = useState(0);
   const platform1 = [
-    { name: "LinkedIn", url: "https://www.linkedin.com/company/jones-consortium/" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/company/jones-consortium/",
+    },
     { name: "Mail", url: "contact@jonesconsortium.in", icon: "fab fa-github" },
-    { name: "Instagram", url: "https://www.instagram.com/jones.consortium?igsh=MWZzbWlsMjQwZDY5Yg%3D%3D", icon: "fab fa-instagram" },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/jones.consortium?igsh=MWZzbWlsMjQwZDY5Yg%3D%3D",
+      icon: "fab fa-instagram",
+    },
   ];
   const platform2 = [
-    { name: "LinkedIn", url: "https://www.linkedin.com/company/jones-realty-pvt-ltd/about/" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/company/jones-realty-pvt-ltd/about/",
+    },
     { name: "Mail", url: "realty@jonesconsortium.in ", icon: "fab fa-github" },
-    { name: "Instagram", url: "https://www.instagram.com/jones.realty.ventures?igsh=MW44emNjcDMyOWxzOQ%3D%3D", icon: "fab fa-instagram" },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/jones.realty.ventures?igsh=MW44emNjcDMyOWxzOQ%3D%3D",
+      icon: "fab fa-instagram",
+    },
   ];
   useEffect(() => {
     const interval = setInterval(() => {
@@ -122,14 +136,14 @@ function TitlePage() {
         <h1 className="progress-bar-text">Under Construction</h1>
         <AnimatedProgressBar progress={progress} />
       </div>
-      <div className="contact-info" >
-      <div className="contact-individual">
-<h3>Jones consortium  : </h3>
-        <ContactCard platform={platform1}/>  
+      <div className="contact-info">
+        <div className="contact-individual">
+          <h3>Jones consortium : </h3>
+          <ContactCard platform={platform1} />
         </div>
         <div className="contact-individual">
-<h3>Jones Realty ventures  : </h3>
-        <ContactCard platform={platform2}/>
+          <h3>Jones Realty ventures : </h3>
+          <ContactCard platform={platform2} />
         </div>
       </div>
     </div>

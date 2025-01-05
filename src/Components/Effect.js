@@ -2,6 +2,8 @@ import React from "react";
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
 import TitlePage from "./TitlePage";
+import DetailsPage from "./DetailsPage";
+
 const ParallaxEffect = () => {
   const particlesInit = async (engine) => {
     console.log(engine);
