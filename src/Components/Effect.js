@@ -68,7 +68,7 @@ const ParallaxEffect = () => {
             },
             particles: {
               number: {
-                value: 200, // Number of particles
+                value: 100, // Number of particles
                 density: {
                   enable: true,
                   area: 800, // The area the particles occupy
