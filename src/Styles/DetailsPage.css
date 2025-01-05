@@ -1,0 +1,78 @@
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.subscription-form input {
+  width: 300px;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-form input:focus {
+  outline: none;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.inside-one {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  /* background: 
+    radial-gradient(circle, rgba(233, 196, 255, 0.3) 0%, rgba(203, 114, 255, 0.3) 70%) center/50% 50% repeat; */
+  /* opacity: 0.5; */
+  /* background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); */
+  /* border: 1px solid red; */
+}
+
+.form-container {
+  opacity: 1; /* Full opacity */
+  position: relative; /* Ensure it remains on top */
+  z-index: 1; /* Ensure it visually stands out */
+  /* background: white; Optional: Add a background for clarity */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+.notify-btn:hover {
+  background: #e64a19;
+}
+
+.thank-you-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  overflow: hidden;
+  position: relative;
+}
