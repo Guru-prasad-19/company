@@ -16,16 +16,19 @@
     justify-content: center;
     align-items: center;
   }
-
+  .logo {
+    width: 300px;
+  }
   .indexedStep.accomplished {
     background-color: rgba(0, 116, 217, 1);
   }
   .coming-soon-container {
     margin: 0;
     width: 100%;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 5%;
     z-index: 4;
@@ -109,6 +112,30 @@
     left: 20%;
   }
 
+  .map-container {
+    width: 90%; /* Reduce width for smaller screens */
+    margin: 10px auto; /* Center the map with smaller margins */
+  }
+
+  .map-rectangle {
+    position: relative;
+    width: 100%; /* Full width within container */
+    padding-top: 56.25%; /* Maintain 16:9 Aspect Ratio */
+    overflow: hidden;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a cleaner look */
+  }
+
+  .map-rectangle iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px; /* Match container's rounded corners */
+  }
   /* Background Animation */
   .background-animation {
     position: absolute;
@@ -169,7 +196,7 @@
   }
 
   .contact-item {
-    width: 100%;
+    width: 100%;  
     margin:0px;
     border: 1px solid black;
     padding: 5px;
@@ -177,6 +204,10 @@
     background-color: white;
   }
 
+  .pipe{
+    color: #e8be50;
+    margin-right: 10px;
+  }
   .icon {
     color: #000000;
     font-size: 10px;
@@ -273,6 +304,37 @@
 
 } */
 @media (min-width: 768px) {
+  .map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .map-rectangle {
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .map-rectangle iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensures the iframe doesn't handle clicks */
+  }
+  
+  .map-rectangle:hover {
+    border-color: #007bff;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+  }
+  
   .indexedStep {
     color: white;
     width: 20px;
@@ -290,14 +352,15 @@
   }
   .coming-soon-container {
     margin: 0;
+    padding-top: 130px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 5%;
     z-index: 4;
-    height: 100vh;
+    /* height: 100vh; */
     background: #26183a;
     /* background: #26183a;
     
@@ -321,6 +384,10 @@
     position: relative;
   }
 
+  .pipe{
+    color: #e8be50;
+    margin-right: 30px;
+  }
   /* Circular Gradient Overlays */
   .circular-gradient {
     position: absolute;
