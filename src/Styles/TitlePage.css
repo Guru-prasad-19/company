@@ -17,8 +17,8 @@
     align-items: center;
   }
   .logo {
-    width: 20px;
-    box-shadow: 2px 4px 6px rgb(255, 255, 255);
+    width: 200px;
+    /* box-shadow: 2px 4px 6px rgb(255, 255, 255); */
   }
   .indexedStep.accomplished {
     background-color: rgba(0, 116, 217, 1);
@@ -36,7 +36,7 @@
     height: 100vh;
     /* background: #000000;*/
     
-    background: #26183a;
+    background: #492F65;
     
     /* background: linear-gradient(to right, #6a11cb, #2575fc); */
     /* background: -webkit-linear-gradient(
@@ -360,7 +360,7 @@
     align-items: center;
     z-index: 4;
     height: 100vh;
-    background: #26183a;
+    background: #492F65;
     /* background: #26183a;
     
     background: -webkit-linear-gradient(
@@ -517,8 +517,12 @@
     justify-content: space-evenly;
   }
   .logo {
-    margin-left:-100px;
-    width: 150px;
+    
+    /* margin-left:-100px; */
+    /* border: 1px solid #ffffff; */
+    /* border-top-left-radius: px;
+    border-bottom-right-radius: 15px; */
+    width: 350px;
     /* box-shadow: 2px 4px 6px rgb(255, 255, 255); */
   }
 

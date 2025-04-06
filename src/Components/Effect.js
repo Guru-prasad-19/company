@@ -113,7 +113,7 @@ const ParallaxEffect = () => {
       >
         
 
-       <TitlePage/>
+       <TitlePage/> 
        {/* <hr/>
        <DetailsPage/> */}
       </div>

@@ -4,7 +4,7 @@ import "../Styles/TitlePage.css";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
-import Logo from "../JCLogo.png";
+import Logo from "../logo2_2.png";
 const ContactCard = ({ platform }) => {
   return (
     <div className="contact-container">
