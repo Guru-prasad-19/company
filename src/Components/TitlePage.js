@@ -128,11 +128,11 @@ function TitlePage() {
           
           Jones Consortium 
           </p> 
-        <span className="pipe">|</span>
+        {/* <span className="pipe">|</span>
         <p>
 
         Jones Realty ventures
-        </p>
+        </p> */}
       </motion.h1>
       <div className="body-content">
 
@@ -157,10 +157,10 @@ function TitlePage() {
           <h3>Jones Consortium : </h3>
           <ContactCard platform={platform1} />
         </div>
-        <div className="contact-individual">
+        {/* <div className="contact-individual">
           <h3>Jones Realty ventures : </h3>
           <ContactCard platform={platform2} />
-        </div>
+        </div> */}
       </div>
       {/* <div class="map-container">
         <a
